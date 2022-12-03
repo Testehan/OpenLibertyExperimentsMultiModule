@@ -1,0 +1,13 @@
+To deploy your EAR application on an Open Liberty server, run the Maven liberty:run goal from the finish directory
+using the -pl flag to specify the ear project. The -pl flag specifies the project where the Maven goal runs.
+
+    mvn -pl ear liberty:run
+
+    http://localhost:9080/converter/
+
+I have also created a runner RunLibertyDev that runs the server in development mode and deploys the ear.
+
+
+
+More information about Multi Module applications running on open liberty:
+    https://github.com/OpenLiberty/ci.maven/blob/main/docs/dev.md#multiple-modules
